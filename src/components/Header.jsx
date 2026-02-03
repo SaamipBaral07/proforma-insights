@@ -152,30 +152,39 @@ export const Header = () => {
               </Link>
             </nav>
 
+            {/* CTA Button */}
+            <Link to="/contact" className="cta-button">
+              <Phone size={16} />
+              Get Consultation
+            </Link>
+
             {/* Mobile Menu Button */}
             <button 
               className="mobile-menu-btn"
               onClick={toggleMobileMenu}
               aria-label="Toggle menu"
             >
-              <div className={`menu-icon ${isMobileMenuOpen ? 'open' : ''}`}>
+              <div className="menu-icon">
                 <span></span>
                 <span></span>
                 <span></span>
               </div>
             </button>
-
-            {/* CTA Button */}
-            <Link to="/contact" className="cta-button">
-              <Phone size={16} />
-              Get Consultation
-            </Link>
           </div>
         </div>
 
         {/* Mobile Navigation */}
         <div className={`mobile-nav ${isMobileMenuOpen ? 'open' : ''}`}>
           <div className="mobile-nav-content">
+            <button 
+              className="mobile-close-btn"
+              onClick={() => setIsMobileMenuOpen(false)}
+              aria-label="Close menu"
+            >
+              <span></span>
+              <span></span>
+            </button>
+
             <Link 
               to="/" 
               className={`mobile-nav-link ${location.pathname === '/' ? 'active' : ''}`}
