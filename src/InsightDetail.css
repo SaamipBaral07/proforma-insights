@@ -496,7 +496,7 @@
   
   .navigation-controls {
     padding: 0 20px;
-    margin: 30px auto 0;
+    margin: 45px auto 0;
   }
   
   .article-container {
@@ -539,6 +539,21 @@
   }
 }
 
+@media (max-width: 600px) {
+  .market-analysis-page,
+  .tech-trends-page,
+  .business-growth-page,
+  .accounting-practice-page,
+  .digital-transform-page,
+  .financial-planning-page {
+    padding-top: 105px;
+  }
+  
+  .navigation-controls {
+    margin: 40px auto 0;
+  }
+}
+
 @media (max-width: 480px) {
   .market-analysis-page,
   .tech-trends-page,
@@ -546,7 +561,11 @@
   .accounting-practice-page,
   .digital-transform-page,
   .financial-planning-page {
-    padding-top: 100px;
+    padding-top: 95px;
+  }
+  
+  .navigation-controls {
+    margin: 40px auto 0;
   }
   
   .nav-buttons {
