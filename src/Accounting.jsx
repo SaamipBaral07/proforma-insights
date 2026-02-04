@@ -3,7 +3,7 @@ import { Header } from './components/Header.jsx';
 import { Footer } from './components/Footer.jsx';
 import { Sparkles, BookOpen, PieChart, DollarSign, FileText, Users, ArrowRight } from 'lucide-react';
 import image1 from './images/accounting-1.jpg';
-
+import { Link } from 'react-router-dom';
 export const Accounting = () => {
   const features = [
     {
