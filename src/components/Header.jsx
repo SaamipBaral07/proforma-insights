@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom';
 import { Mail, Phone, MapPin, ChevronDown, Clock, Facebook, Instagram, Linkedin, Youtube } from 'lucide-react';
-import logo from '../images/proforma-logo-1.png';
+import logo from '../images/proformaLogo.png';
 
 export const Header = () => {
   const [servicesDropdown, setServicesDropdown] = useState(false);

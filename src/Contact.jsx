@@ -57,8 +57,9 @@ export const Contact = () => {
                 <Phone size={28} />
               </div>
               <h3 className="card-title">Contact Us</h3>
-              <p className="card-text">Phone: +977-984XXXXXXXX</p>
-              <p className="card-text">Email: contact@proforma.com</p>
+              <p className="card-text">Phone: +977-61-545445</p>
+              <p className="card-text">Mobile: 9744500107</p>
+              <p className="card-text">Mail:proformadigitaltech@gmail.com</p>
             </div>
 
             <div className="contact-card">
@@ -66,7 +67,8 @@ export const Contact = () => {
                 <Clock size={28} />
               </div>
               <h3 className="card-title">Working Hours</h3>
-              <p className="card-text">Sunday - Friday: 9:00 AM - 5:00 PM</p>
+              <p className="card-text">Sunday - Friday</p>
+              <p className="card-text">9:00 AM - 5:00 PM</p>
               <p className="card-text">Saturday: Closed</p>
             </div>
 
