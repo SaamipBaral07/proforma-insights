@@ -32,11 +32,11 @@ export const HeroSection = () => {
         <div className="hero-image">
           <img src={heroImage} alt="Proforma Hero" />
         </div>
-        
+
         <div className="hero-content">
           <h2 className="hero-title">
-            The Remote and Physical Business Consultancy With All Related IT Services.
-            {/* <span className="hero-highlight"> IT Services </span> */}
+            The Remote and Physical Business Consultancy With All Related
+            <span className="hero-highlight-1"> IT Services</span>
           </h2>
           <p className="hero-subtitle">Professional consultancy to drive business growth and profitability</p>
           <div className="hero-features">
