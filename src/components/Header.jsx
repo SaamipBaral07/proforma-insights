@@ -157,7 +157,12 @@ export const Header = () => {
             </nav>
 
             {/* CTA Button */}
-            <Link to="/contact" className="cta-button">
+            <Link to="/contact#inquiry" className="cta-button" onClick={() => {
+              if (location.pathname === '/contact') {
+                const el = document.getElementById('inquiry');
+                if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+              }
+            }}>
               <Phone size={16} />
               Get Consultation
             </Link>
@@ -251,7 +256,7 @@ export const Header = () => {
 
 
             <Link 
-              to="/contact" 
+              to="/contact#inquiry" 
               className={`mobile-nav-link ${location.pathname === '/contact' ? 'active' : ''}`}
               onClick={() => setIsMobileMenuOpen(false)}
             >

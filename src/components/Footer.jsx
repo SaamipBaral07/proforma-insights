@@ -1,5 +1,5 @@
 import { MapPin, Phone, Mail, Facebook, Instagram, Linkedin } from 'lucide-react';
-import proformaLogo from '../images/proformaLogo.png';
+import proformaLogo from '../images/proformaLogo.jpeg';
 import { Link } from 'react-router-dom';
 
 export function Footer() {

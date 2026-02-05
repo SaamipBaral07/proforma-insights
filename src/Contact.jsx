@@ -1,4 +1,5 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { Header } from "./components/Header.jsx";
 import { Footer } from "./components/Footer";
 import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Linkedin, Youtube, Send } from "lucide-react";
@@ -8,6 +9,17 @@ import emailjs from '@emailjs/browser';
 export const Contact = () => {
   const formRef = useRef();
   const [status, setStatus] = useState(null); // null | 'sending' | 'success' | 'error'
+  const inquiryRef = useRef(null);
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.pathname === '/contact' && location.hash === '#inquiry') {
+      // small delay to ensure DOM has rendered
+      setTimeout(() => {
+        inquiryRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }, 100);
+    }
+  }, [location]);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -160,7 +172,7 @@ export const Contact = () => {
             </div>
 
             {/* Form Section */}
-            <div className="form-section">
+            <div id="inquiry" className="form-section" ref={inquiryRef}>
               <h2 className="section-title">Quick Inquiry</h2>
               <div className="form-container">
                 <form ref={formRef} className="contact-form" onSubmit={sendEmail}>
