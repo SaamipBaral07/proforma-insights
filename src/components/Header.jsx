@@ -46,10 +46,14 @@ export const Header = () => {
             </div>
             
             <div className="top-bar-contact">
-              <a href="mailto:proformadigitaltech@gmail.com" className="contact-link">
-                <Mail size={14} />
-                <span>proformadigitaltech@gmail.com</span>
-              </a>
+                 <a href={`https://mail.google.com/mail/?view=cm&fs=1&to=proformadigitaltech@gmail.com`}
+                         target="_blank"
+                          rel="noopener noreferrer"
+                          className="contact-link"
+                          title="Send Email" >
+                            <Mail size={14} />
+                            proformadigitaltech@gmail.com
+                      </a>
               <a href="tel:+977061545445" className="contact-link">
                 <Phone size={14} />
                 <span>061-545445</span>
@@ -259,10 +263,17 @@ export const Header = () => {
                 <Phone size={18} />
                 <span>061-545445</span>
               </a>
-              <a href="mailto:contact@proforma.com" className="mobile-contact-link">
-                <Mail size={18} />
-                <span>contact@proforma.com</span>
-              </a>
+             
+
+
+              <a href={`https://mail.google.com/mail/?view=cm&fs=1&to=proformadigitaltech@gmail.com`}
+                         target="_blank"
+                          rel="noopener noreferrer"
+                          className="mobile-contact-link"
+                          title="Send Email" >
+                            <Mail size={18} />
+                            proformadigitaltech@gmail.com
+                      </a>
             </div>
           </div>
         </div>

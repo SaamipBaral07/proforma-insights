@@ -12,7 +12,7 @@ export const Team = () => {
       role: "Founder & CEO",
       bio: "Binod Pokhrel is the visionary behind Proforma Insights, leading the company with a passion for innovation and excellence in business consultancy.",
       photo: "https://ca.slack-edge.com/T0A7S7AP7DH-U0A7S7NDXFD-36f3d614b897-512",
-      email: "binod@proforma.com",
+      email: "proformaconsultant@gmail.com",
       phone: "+977-984-XXXXXXX"
     },
     {
@@ -21,7 +21,7 @@ export const Team = () => {
       role: "Chartered Accountant",
       bio: "Janak Subedi is a seasoned Chartered Accountant with expertise in financial management and strategic planning, ensuring our clients achieve their business goals.",
       photo: "https://ca.slack-edge.com/T0A7S7AP7DH-U0A7WHNKP38-b517aacc6dd6-512",
-      email: "janak@proforma.com",
+      email: "proformaconsultant@gmail.com",
       phone: "+977-984-XXXXXXX"
     },
     {
@@ -30,7 +30,7 @@ export const Team = () => {
       role: "IT Officer",
       bio: "Samit Paudel manages our IT infrastructure and ensures seamless operations across all departments with cutting-edge technology solutions.",
       photo: "https://ca.slack-edge.com/T0A7S7AP7DH-U0A7V683CS1-598d13966583-512",
-      email: "samit@proforma.com",
+      email: "proformadigitaltech@gmail.com",
       phone: "+977-984-XXXXXXX"
     },
     {
@@ -39,7 +39,7 @@ export const Team = () => {
       role: "Chief Technology Officer",
       bio: "Suraj Pandey develops and maintains our web applications, ensuring they are robust, scalable, and user-friendly with modern tech stacks.",
       photo: "https://ca.slack-edge.com/T0A7S7AP7DH-U0A7H5PAN6B-52b3ce89f9e1-192",
-      email: "suraj@proforma.com",
+      email: "proformadigitaltech@gmail.com",
       phone: "+977-984-XXXXXXX"
     },
     {
@@ -48,7 +48,7 @@ export const Team = () => {
       role: "Finance Officer",
       bio: "Soonam handles our financial accounting with precision and ensures compliance with all regulatory requirements and standards.",
       photo: "https://ca.slack-edge.com/T0A7S7AP7DH-U0A8BKDR7TK-6d4bd0b0b613-512",
-      email: "soonam@proforma.com",
+      email: "proformaconsultant@gmail.com",
       phone: "+977-984-XXXXXXX"
     },
     {
@@ -57,7 +57,7 @@ export const Team = () => {
       role: "Frontend Intern",
       bio: "Samip Baral is an frontend intern at Proforma Insights, contributing to various projects and learning from experienced professionals.",
       photo: image1,
-      email: "samip@proforma.com",
+      email: "samipbaral.proforma@gmail.com",
       phone: "+977-984-XXXXXXX"
     }
   ];
@@ -122,9 +122,15 @@ export const Team = () => {
                 />
                 <div className="team-member-overlay">
                   <div className="contact-icons">
-                    <a href={`mailto:${member.email}`} className="contact-icon" title="Send Email">
-                      <Mail size={20} />
-                    </a>
+
+                  <a href={`https://mail.google.com/mail/?view=cm&fs=1&to=${member.email}`}
+                         target="_blank"
+                          rel="noopener noreferrer"
+                          className="contact-icon"
+                          title="Send Email" >
+                            <Mail size={20} />
+                      </a>
+
                     <a href={`tel:${member.phone}`} className="contact-icon" title="Call">
                       <Phone size={20} />
                     </a>
