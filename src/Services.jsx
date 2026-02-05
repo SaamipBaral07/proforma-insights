@@ -79,13 +79,13 @@ export const Services = () => {
   return (
     <div className="services-page">
       <Header />
-      
+
       {/* Hero Section with Overlay */}
       <div className="services-hero">
         <div className="hero-overlay">
           <div className="hero-content">
             <h1 className="hero-title">
-          
+
               Our Services
             </h1>
             <p className="hero-subtitle">
@@ -128,9 +128,9 @@ export const Services = () => {
                   </div>
                   <h3 className="service-title">{service.title}</h3>
                 </div>
-                
+
                 <p className="service-description">{service.description}</p>
-                
+
                 <div className="service-features">
                   <h4 className="features-title">Key Features</h4>
                   <ul className="features-list">
@@ -142,7 +142,7 @@ export const Services = () => {
                     ))}
                   </ul>
                 </div>
-                
+
                 <Link to={service.link} className="service-link">
                   Explore Service
                   <ArrowRight size={18} />
@@ -154,12 +154,12 @@ export const Services = () => {
       </div>
 
       {/* CTA Section */}
-      <div className="services-cta">
-        <div className="container">
+      <div className="container">
+        <div className="services-cta">
           <div className="cta-content">
             <h2 className="cta-main-title">Ready to Transform Your Business?</h2>
             <p className="cta-main-subtitle">
-              Let's discuss how our comprehensive services can help you achieve your business objectives and drive sustainable growth.
+              Let's discuss how our comprehensive services can help your business objectives and drive sustainable growth.
             </p>
             <div className="cta-buttons">
               <Link to="/contact" className="cta-button primary">

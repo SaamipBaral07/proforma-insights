@@ -67,6 +67,7 @@
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -91,8 +92,17 @@
 }
 
 @keyframes sparkle {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50% { opacity: 0.7; transform: scale(1.1); }
+
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.7;
+    transform: scale(1.1);
+  }
 }
 
 .hero-subtitle {
@@ -310,28 +320,17 @@
 }
 
 /* CTA Section */
+/* CTA Section - Matches About Page Style */
 .services-cta {
   background: linear-gradient(135deg, var(--services-primary) 0%, var(--services-secondary) 100%);
-  padding: 80px 0;
-  margin-top: 40px;
+  border-radius: 16px;
+  padding: 80px 40px;
   text-align: center;
+  color: white;
+  margin: 80px 0;
   position: relative;
   overflow: hidden;
-  /* Subtle separation effect so footer doesn't blend in */
-  box-shadow: inset 0 -36px 40px -30px rgba(0, 0, 0, 0.25);
-}
-
-/* thin, soft divider at bottom of CTA (not a harsh white line) */
-.services-cta::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -1px;
-  height: 2px;
-  background: linear-gradient(90deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03));
-  opacity: 0.95;
-  pointer-events: none;
+  box-shadow: var(--services-shadow);
 }
 
 .services-cta::before {
@@ -343,6 +342,10 @@
   bottom: 0;
   background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0,0 L100,0 L100,100 Z" fill="rgba(255,255,255,0.1)"/></svg>');
   background-size: cover;
+}
+
+.services-cta::after {
+  display: none;
 }
 
 .cta-content {
@@ -384,6 +387,8 @@
   align-items: center;
   justify-content: center;
   min-width: 200px;
+  margin: 0;
+  /* Reset global margin if any */
 }
 
 .cta-button.primary {
@@ -417,6 +422,7 @@
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -428,26 +434,38 @@
   opacity: 0;
 }
 
-.service-card:nth-child(1) { animation-delay: 0.1s; }
-.service-card:nth-child(2) { animation-delay: 0.2s; }
-.service-card:nth-child(3) { animation-delay: 0.3s; }
-.service-card:nth-child(4) { animation-delay: 0.4s; }
+.service-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.service-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.service-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.service-card:nth-child(4) {
+  animation-delay: 0.4s;
+}
 
 /* Responsive Design */
 @media (max-width: 1200px) {
   .services-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .service-card {
     min-height: 430px;
     padding: 25px;
   }
-  
+
   .service-icon {
     width: 50px;
     height: 50px;
   }
-  
+
   .service-title {
     font-size: 1.4rem;
   }
@@ -458,19 +476,19 @@
     height: 280px;
     margin-top: 130px;
   }
-  
+
   .hero-title {
     font-size: 3rem;
   }
-  
+
   .services-section-title {
     font-size: 2.5rem;
   }
-  
+
   .services-benefits {
     margin: 30px 20px 0 20px;
   }
-  
+
   .benefits-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -479,79 +497,88 @@
 @media (max-width: 768px) {
   .services-hero {
     height: 240px;
-    margin-top: 120px;
+    margin-top: 140px;
     padding-bottom: 20px;
   }
-  
+
   .hero-title {
     font-size: 2.5rem;
     flex-direction: column;
     gap: 10px;
   }
-  
+
   .hero-subtitle {
     font-size: 1.1rem;
     padding: 0 20px;
   }
-  
+
   .container {
     padding: 0 20px;
   }
-  
+
   .services-grid {
     grid-template-columns: 1fr;
     gap: 30px;
   }
-  
+
   .benefits-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .services-benefits {
     margin: 30px 15px 0 15px;
     padding: 30px 0;
   }
-  
+
   .services-section-title {
     font-size: 2rem;
   }
-  
-  .cta-title {
+
+  .services-cta {
+    padding: 50px 20px;
+  }
+
+  .cta-main-title {
     font-size: 2rem;
   }
-  
+
+  .cta-main-subtitle {
+    font-size: 1.1rem;
+  }
+
   .cta-buttons {
     flex-direction: column;
     align-items: center;
   }
-  
+
   .cta-button {
     width: 100%;
     max-width: 300px;
   }
-   .service-card {
+
+  .service-card {
     min-height: 400px;
     padding: 20px;
   }
-  
+
   .service-card-header {
     margin-bottom: 15px;
   }
-  
+
   .service-description {
     margin-bottom: 15px;
     font-size: 0.9rem;
   }
-  
+
   .service-features {
     margin-bottom: 20px;
   }
-  
+
   .feature-item {
     margin-bottom: 6px;
     font-size: 0.85rem;
   }
-  
+
   .service-link {
     padding: 10px 20px;
     font-size: 13px;
@@ -561,50 +588,50 @@
 @media (max-width: 480px) {
   .services-hero {
     height: 220px;
-    margin-top: 120px;
+    margin-top: 140px;
     padding-bottom: 20px;
   }
-  
+
   .hero-title {
     font-size: 2rem;
   }
-  
+
   .hero-subtitle {
     font-size: 1rem;
   }
-  
+
   .container {
     padding: 0 15px;
   }
-  
- 
-  
+
+
+
   .service-title {
     font-size: 1.5rem;
   }
-  
+
   .cta-title {
     font-size: 1.75rem;
   }
-  
+
   .cta-subtitle {
     font-size: 1.1rem;
   }
 
-   .service-card {
+  .service-card {
     min-height: 380px;
   }
-  
+
   .service-card-header {
     flex-direction: column;
     text-align: center;
     gap: 12px;
   }
-  
+
   .service-title {
     font-size: 1.3rem;
   }
-  
+
   .service-link {
     width: 100%;
     justify-content: center;
@@ -693,6 +720,7 @@
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -987,11 +1015,11 @@
   .container {
     padding: 0 30px;
   }
-  
+
   .services-container {
     gap: 40px;
   }
-  
+
   .accounting-services-image,
   .tax-services-image,
   .it-services-image,
@@ -1001,6 +1029,7 @@
 }
 
 @media (max-width: 992px) {
+
   .accounting-hero-section,
   .it-service-hero-section,
   .tax-service-hero-section,
@@ -1008,72 +1037,73 @@
     height: 250px;
     margin-top: 120px;
   }
-  
+
   .accounting-hero-title,
   .it-service-hero-title,
   .tax-service-hero-title,
   .digital-service-hero-title {
     font-size: 2.8rem;
   }
-  
+
   .accounting-hero-subtitle,
   .it-service-hero-subtitle,
   .tax-service-hero-subtitle,
   .digital-service-hero-subtitle {
     font-size: 1.3rem;
   }
-  
+
   .services-container {
     grid-template-columns: 1fr;
     gap: 40px;
   }
-  
+
   .accounting-content-title,
   .it-service-content-title,
   .tax-service-content-title,
   .digital-service-content-title {
     font-size: 2.2rem;
   }
-  
+
   .service-features-grid {
     grid-template-columns: 1fr;
   }
 }
 
 @media (max-width: 768px) {
+
   .accounting-hero-section,
   .it-service-hero-section,
   .tax-service-hero-section,
   .digital-service-hero-section {
     height: 220px;
-    margin-top: 110px;
+    margin-top: 140px;
   }
-  
+
   .accounting-hero-title,
   .it-service-hero-title,
   .tax-service-hero-title,
   .digital-service-hero-title {
     font-size: 2.2rem;
   }
-  
+
   .accounting-hero-subtitle,
   .it-service-hero-subtitle,
   .tax-service-hero-subtitle,
   .digital-service-hero-subtitle {
     font-size: 1.1rem;
   }
-  
+
   .container {
     padding: 0 20px;
   }
-  
+
   .accounting-content-section,
   .it-service-content-section,
   .tax-service-content-section,
   .digital-service-content-section {
     padding: 50px 0;
   }
-  
+
   .accounting-services-image,
   .tax-services-image,
   .it-services-image,
@@ -1081,18 +1111,18 @@
     height: 300px;
     order: -1;
   }
-  
+
   .services-content-block {
     padding: 30px;
   }
-  
+
   .accounting-content-text,
   .it-service-content-text,
   .tax-service-content-text,
   .digital-service-content-text {
     font-size: 1rem;
   }
-  
+
   .accounting-services-list li,
   .it-services-list li,
   .tax-services-list li,
@@ -1100,68 +1130,69 @@
     font-size: 1rem;
     padding-left: 28px;
   }
-  
+
   .service-cta {
     padding: 30px;
   }
-  
+
   .cta-title {
     font-size: 1.8rem;
   }
 }
 
 @media (max-width: 480px) {
+
   .accounting-hero-section,
   .it-service-hero-section,
   .tax-service-hero-section,
   .digital-service-hero-section {
     height: 200px;
-    margin-top: 100px;
+    margin-top: 140px;
   }
-  
+
   .accounting-hero-title,
   .it-service-hero-title,
   .tax-service-hero-title,
   .digital-service-hero-title {
     font-size: 1.8rem;
   }
-  
+
   .accounting-hero-subtitle,
   .it-service-hero-subtitle,
   .tax-service-hero-subtitle,
   .digital-service-hero-subtitle {
     font-size: 1rem;
   }
-  
+
   .container {
     padding: 0 15px;
   }
-  
+
   .accounting-content-title,
   .it-service-content-title,
   .tax-service-content-title,
   .digital-service-content-title {
     font-size: 1.8rem;
   }
-  
+
   .accounting-services-image,
   .tax-services-image,
   .it-services-image,
   .digital-services-image {
     height: 250px;
   }
-  
+
   .accounting-services-list li,
   .it-services-list li,
   .tax-services-list li,
   .digital-services-list li {
     font-size: 0.95rem;
   }
-  
+
   .services-content-block {
     padding: 25px;
   }
-  
+
   .cta-button {
     width: 100%;
     justify-content: center;

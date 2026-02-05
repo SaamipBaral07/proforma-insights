@@ -66,23 +66,23 @@ export const Team = () => {
     { icon: <Users size={32} />, value: "100+", label: "Happy Clients" },
     { icon: <Briefcase size={32} />, value: "100+", label: "Projects Completed" },
     { icon: <Award size={32} />, value: "5+", label: "Years Experience" },
-   
+
   ];
 
   return (
     <div className="team-page">
-      <Header/>
-      
+      <Header />
+
       {/* Hero Section */}
       <div className="team-hero-section">
         <div className="hero-overlay">
           <div className="hero-content">
             <h1 className="hero-title">
-            
+
               Meet Our Team
             </h1>
             <p className="hero-subtitle">
-              A dedicated team of professionals committed to delivering exceptional 
+              A dedicated team of professionals committed to delivering exceptional
               financial and business consulting services.
             </p>
           </div>
@@ -115,21 +115,21 @@ export const Team = () => {
           {teamMembers.map((member) => (
             <div key={member.id} className="team-member-card">
               <div className="team-member-image-container">
-                <img 
-                  src={member.photo} 
-                  alt={member.name} 
+                <img
+                  src={member.photo}
+                  alt={member.name}
                   className="team-member-photo"
                 />
                 <div className="team-member-overlay">
                   <div className="contact-icons">
 
-                  <a href={`https://mail.google.com/mail/?view=cm&fs=1&to=${member.email}`}
-                         target="_blank"
-                          rel="noopener noreferrer"
-                          className="contact-icon"
-                          title="Send Email" >
-                            <Mail size={20} />
-                      </a>
+                    <a href={`https://mail.google.com/mail/?view=cm&fs=1&to=${member.email}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="contact-icon"
+                      title="Send Email" >
+                      <Mail size={20} />
+                    </a>
 
                     <a href={`tel:${member.phone}`} className="contact-icon" title="Call">
                       <Phone size={20} />
@@ -140,12 +140,12 @@ export const Team = () => {
                   </div>
                 </div>
               </div>
-              
+
               <div className="team-member-info">
                 <h3 className="team-member-name">{member.name}</h3>
                 <div className="team-member-role-badge">{member.role}</div>
                 <p className="team-member-bio">{member.bio}</p>
-                
+
                 <div className="team-member-contact">
                   <div className="contact-info">
                     <Mail size={16} />
@@ -163,10 +163,10 @@ export const Team = () => {
       </div>
 
       {/* CTA Section */}
-      <div className="team-cta-section">
-        <div className="container">
-          <h2 className="cta-main-title">Ready to Work With Our Team?</h2>
-          <p className="cta-main-subtitle">
+      <div className="container">
+        <div className="team-cta-section">
+          <h2 className="cta-title">Ready to Work With Our Team?</h2>
+          <p className="cta-subtitle">
             Contact us today to discuss how our expert team can help your business grow
           </p>
           <div className="cta-buttons">
@@ -180,7 +180,7 @@ export const Team = () => {
         </div>
       </div>
 
-      <Footer/>
+      <Footer />
     </div>
   )
 }

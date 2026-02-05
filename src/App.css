@@ -708,6 +708,7 @@
     margin-left: 8px;
     gap: 6px;
   }
+
   .cta-button svg {
     width: 16px;
     height: 16px;
@@ -721,6 +722,7 @@
     border-radius: 30px;
     margin-left: 6px;
   }
+
   .cta-button svg {
     display: none;
   }
@@ -3044,7 +3046,7 @@
 
 /* ================= FOOTER ================= */
 footer {
-   background: linear-gradient(135deg, #003d82 0%, #00243d 100%); 
+  background: linear-gradient(135deg, #003d82 0%, #00243d 100%);
   /* background:#4169E1;
   background: rgb(65, 105, 225); */
   padding: 0;
@@ -4826,11 +4828,14 @@ footer {
 /* CTA Section */
 .team-cta-section {
   background: linear-gradient(135deg, var(--team-primary) 0%, var(--team-secondary) 100%);
-  padding: 80px 0;
-  margin-top: 80px;
+  border-radius: 16px;
+  padding: 80px 40px;
   text-align: center;
+  color: white;
+  margin: 80px 0;
   position: relative;
   overflow: hidden;
+  box-shadow: var(--team-shadow);
 }
 
 .team-cta-section::before {
@@ -5056,6 +5061,10 @@ footer {
   .cta-button {
     width: 100%;
     max-width: 300px;
+  }
+
+  .team-cta-section {
+    padding: 50px 20px;
   }
 }
 
