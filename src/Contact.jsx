@@ -40,8 +40,8 @@ export const Contact = () => {
 
   return (
     <div className="contact-page">
-      <Header/>
-      
+      <Header />
+
       {/* Hero Banner Section */}
       <div className="contact-hero">
         <div className="hero-overlay">
@@ -106,54 +106,54 @@ export const Contact = () => {
               </div>
             </div>
           </div>
-     
-{/* Social Media Posts Section */}
-<div className="social-posts-section">
-  <h2 className="section-title">Latest Updates</h2>
-  <div className="social-posts-grid">
-    {/* Facebook Post */}
-    <div className="social-post-card facebook-post">
-      <h3 className="social-post-title">
-        <Facebook size={20} />
-        Facebook Update
-      </h3>
-      <div className="post-container">
-        <iframe
-          src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0oV85y6LpK3qj9VJG3GQvA4eQd6Nk49tAXGDtcXcwcpNh1vCd17HbYT15tdU5Edkkl%26id%3D61585342955323&show_text=true&width=100%"
-          height="500"
-          style={{ border: 'none', overflow: 'hidden' }}
-          scrolling="no"
-          frameBorder="0"
-          allowFullScreen={true}
-          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-          title="Facebook Post"
-          className="social-embed"
-        ></iframe>
-      </div>
-    </div>
 
-    {/* Instagram Post */}
-    <div className="social-post-card instagram-post">
-      <h3 className="social-post-title">
-        <Instagram size={20} />
-        Instagram Update
-      </h3>
-      <div className="post-container">
-        <iframe
-          src="https://www.instagram.com/p/DT2j84_DfML/embed"
-          height="500"
-          style={{ border: 'none', overflow: 'hidden' }}
-          scrolling="no"
-          frameBorder="0"
-          allowFullScreen={true}
-          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-          title="Instagram Post"
-          className="social-embed"
-        ></iframe>
-      </div>
-    </div>
-  </div>
-</div>
+          {/* Social Media Posts Section */}
+          <div className="social-posts-section">
+            <h2 className="section-title">Latest Updates</h2>
+            <div className="social-posts-grid">
+              {/* Facebook Post */}
+              <div className="social-post-card facebook-post">
+                <h3 className="social-post-title">
+                  <Facebook size={20} />
+                  Facebook Update
+                </h3>
+                <div className="post-container">
+                  <iframe
+                    src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0oV85y6LpK3qj9VJG3GQvA4eQd6Nk49tAXGDtcXcwcpNh1vCd17HbYT15tdU5Edkkl%26id%3D61585342955323&show_text=true&width=100%"
+                    height="500"
+                    style={{ border: 'none', overflow: 'hidden' }}
+                    scrolling="no"
+                    frameBorder="0"
+                    allowFullScreen={true}
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                    title="Facebook Post"
+                    className="social-embed"
+                  ></iframe>
+                </div>
+              </div>
+
+              {/* Instagram Post */}
+              <div className="social-post-card instagram-post">
+                <h3 className="social-post-title">
+                  <Instagram size={20} />
+                  Instagram Update
+                </h3>
+                <div className="post-container">
+                  <iframe
+                    src="https://www.instagram.com/p/DT2j84_DfML/embed"
+                    height="500"
+                    style={{ border: 'none', overflow: 'hidden' }}
+                    scrolling="no"
+                    frameBorder="0"
+                    allowFullScreen={true}
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                    title="Instagram Post"
+                    className="social-embed"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
 
           {/* Two Column Layout: Map + Form */}
           <div className="two-column-section">
@@ -186,32 +186,32 @@ export const Contact = () => {
                       <input type="text" name="last-name" required placeholder="Enter your last name" />
                     </div>
                   </div>
-                  
+
                   <div className="form-group">
                     <label className="form-label">Email</label>
                     <input type="email" name="email" required placeholder="Enter your email address" />
                   </div>
-                  
+
                   <div className="form-group">
                     <label className="form-label">Phone Number</label>
                     <input type="tel" name="phone" required placeholder="Enter your phone number" />
                   </div>
-                  
+
                   <div className="form-group">
                     <label className="form-label">Subject</label>
                     <input type="text" name="subject" required placeholder="What is this regarding?" />
                   </div>
-                  
+
                   <div className="form-group">
                     <label className="form-label">Message</label>
-                    <textarea 
-                      className="form-textarea" 
+                    <textarea
+                      className="form-textarea"
                       name="message"
                       placeholder="Type your message here..."
                       rows="5"
                     ></textarea>
                   </div>
-                  
+
                   <button className="form-submit-button" type="submit" disabled={status === 'sending'}>
                     <Send size={20} />
                     {status === 'sending' ? 'Sending...' : 'Send Message'}
@@ -242,7 +242,7 @@ export const Contact = () => {
         </div>
       </div>
 
-      <Footer/>
+      <Footer />
     </div>
   );
 };
