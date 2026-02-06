@@ -3063,6 +3063,8 @@ footer {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  padding-bottom: 0;
+  margin: 0;
 }
 
 /* FOOTER TOP SECTION */
@@ -3231,15 +3233,14 @@ footer {
 .footer-bottom-bar {
   border-top: 1px solid rgba(255, 255, 255, 0.05);
   /* Lighter border */
-  padding: 24px 0;
-  /* Vertical padding, 0 horizontal to rely on center alignment handling width if needed, essentially full width */
+  padding: 20px 0 0 0;
+  /* Reduced padding, no bottom padding */
   text-align: center;
   background: rgba(0, 0, 0, 0.2);
   /* Subtle dark overlay */
-  margin-top: auto;
-  /* Pushes to bottom if flex container has height */
   width: 100%;
   box-sizing: border-box;
+  margin-bottom: 0;
 }
 
 .footer-bottom-bar p {
@@ -3248,6 +3249,7 @@ footer {
   font-size: 14px;
   margin: 0;
   letter-spacing: 0.3px;
+  padding-bottom: 20px;
 }
 
 
@@ -5162,7 +5164,7 @@ footer {
 .footer-compact {
   background: linear-gradient(135deg, var(--header-primary) 0%, var(--header-secondary) 100%);
   color: white;
-  padding: 50px 0 20px;
+  padding: 50px 0 0;
   margin-top: auto;
   font-family: system-ui, -apple-system, sans-serif;
 }
