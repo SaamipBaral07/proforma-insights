@@ -256,7 +256,7 @@ export const Header = () => {
 
 
             <Link
-              to="/contact#inquiry"
+              to="/contact"
               className={`mobile-nav-link ${location.pathname === '/contact' ? 'active' : ''}`}
               onClick={() => setIsMobileMenuOpen(false)}
             >
