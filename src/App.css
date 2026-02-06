@@ -4,7 +4,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding-top: 120px;
+  padding-top: 160px;
 }
 
 .home-content {
@@ -730,7 +730,7 @@
 
 @media (max-width: 768px) {
   .home-page {
-    padding-top: 110px;
+    padding-top: 140px;
   }
 
   .home-content {
@@ -782,7 +782,7 @@
 
 @media (max-width: 600px) {
   .home-page {
-    padding-top: 105px;
+    padding-top: 125px;
   }
 
   .home-content {
@@ -845,7 +845,7 @@
 
 @media (max-width: 480px) {
   .home-page {
-    padding-top: 95px;
+    padding-top: 115px;
   }
 
   .home-content {
