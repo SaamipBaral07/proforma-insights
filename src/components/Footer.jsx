@@ -67,7 +67,7 @@ export function Footer() {
 
           <div className="contact-item">
             <Mail size={18} />
-            <a href="mailto:proforma@gmail.com">proforma@gmail.com</a>
+            <a href="mailto:proformadigitaltech@gmail.com">proformadigitaltech@gmail.com</a>
           </div>
         </div>
       </div>

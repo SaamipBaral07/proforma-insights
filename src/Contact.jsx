@@ -60,7 +60,7 @@ export const Contact = () => {
                 <MapPin size={28} />
               </div>
               <h3 className="card-title">Our Location</h3>
-              <p className="card-text">Pokhara-8, Ratnachowk</p>
+              <p className="card-text">Pokhara-7, Ratnachowk</p>
               <p className="card-text">Kaski, Nepal</p>
             </div>
 
@@ -70,7 +70,7 @@ export const Contact = () => {
               </div>
               <h3 className="card-title">Contact Us</h3>
               <p className="card-text">Phone: +977-61-545445</p>
-              <p className="card-text">Mobile: 9744500107</p>
+              <p className="card-text">Mobile: +977-9744500107</p>
               <p className="card-text">Mail:proformadigitaltech@gmail.com</p>
             </div>
 
